@@ -17,27 +17,29 @@ El procesamiento incluye:
 5. Estimación de las contribuciones relativas de metanol e isopropanol.
 6. Evaluación del ajuste mediante el coeficiente de determinación (R²) y reconstrucción del espectro experimental.
 
+
 ### Ajuste mediante mínimos cuadrados no negativos
 
 El espectro experimental se aproxima mediante una combinación lineal de los espectros de referencia:
 
-\[
-A_{\mathrm{muestra}}(\tilde{\nu}) \approx aA_{\mathrm{metanol}}(\tilde{\nu}) + bA_{\mathrm{isopropanol}}(\tilde{\nu})
-\]
+$$
+A_{\mathrm{muestra}}(\tilde{\nu}) \approx a A_{\mathrm{metanol}}(\tilde{\nu}) + b A_{\mathrm{isopropanol}}(\tilde{\nu})
+$$
 
 Los coeficientes \(a\) y \(b\) se determinan minimizando la suma de los residuos cuadrados, sujetos a restricciones de no negatividad.
 
 Las contribuciones relativas se calculan normalizando los coeficientes respecto a su suma:
 
-\[
-P_{\mathrm{metanol}}=\frac{a}{a+b}\times100
-\]
+$$
+P_{\mathrm{metanol}} = \frac{a}{a+b}\times 100
+$$
 
-\[
-P_{\mathrm{isopropanol}}=\frac{b}{a+b}\times100
-\]
+$$
+P_{\mathrm{isopropanol}} = \frac{b}{a+b}\times 100
+$$
 
 Los porcentajes obtenidos representan contribuciones espectrales relativas y no necesariamente concentraciones molares o volumétricas, ya que estas requieren una calibración apropiada.
+.
 
 ## Herramientas utilizadas
 
